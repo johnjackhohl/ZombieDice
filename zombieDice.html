@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="zombieDice.css" />
+    <!-- Title -->
+    <title>Zombie Dice</title>
+  </head>
+    <h1 class="center" style="font-size: x-large">Zombie Dice Game</h1>
+
+    <!-- How do you play Poker Dice - Accordion -->
+    <button class="accordion">What is Zombie Dice?</button>
+    <div class="panel">
+      <!-- Format rules here -->
+      <p>
+        In Zombie Dice, you are a zombie. You want braaains - more brains than
+        any of your zombie buddies. The 13 custom dice are your victims. Push
+        your luck to eat their brains, but stop rolling before the shotgun
+        blasts end your turn! Whoever collects 13 brains first wins. Each game
+        takes 10 to 20 minutes and can be taught in a single round.
+      </p>
+    </div>
+
+    <!-- Turn format - Accordion -->
+    <button class="accordion">How do you play?</button>
+    <div class="panel">
+      <!-- format objective here -->
+      <p>
+        Each turn, you take three dice from the box and roll them. A brain
+        symbol is worth one point at the end of the round, while footsteps allow
+        you to reroll this particular dice. Shotgun blasts on the other hand are
+        rather bad, cause if you collect three shotgun blasts during your turn,
+        it is over for you and you get no points. After rolling three dice, you
+        may decide if you want to score your current brain collection or if you
+        want to push your luck by grabbing new dice so you have three again and
+        roll once more.
+      </p>
+    </div>
+
+    <!-- Notes - Accordion -->
+    <button class="accordion">Notes</button>
+    <div class="panel">
+      <!-- format notes here -->
+      Notes on Dice:
+      <ul> 
+        <li>There are 3 types of dice with different risks: green, yellow, red.
+          The green dice have 3 brains, 2 tracks, and 1 shotgun. The yellow dice
+          have 2 of each. The red dice have 1 brain, 3 shotguns, and two tracks.</li>
+        <li>There are 6 green, 4 yellow, and 3 red dice.</li>
+        <li>If you choose to roll, you must roll 3 Dice</li>        
+      </ul>
+      Notes on UI:
+      <ul>
+        <li>The "Dice in the Cup:" will show what dice are left to pick up from (You pick from the right side of the list)</li>
+        <li>When you "Roll", the dice you roll will display in "Current Roll"</li>
+        <li>When you want to bank or have 3 or more blasts, you need to press the "End Turn" button</li>
+      </ul>
+    </div>
+
+    <!-- Game Area -->
+    <div class="center">
+      <!-- Future proofing (we might be able pull off 4 players) -->
+      <!-- We would just have to change these to a dynamic for loop -->
+      <div class="columns" id="playersArea">
+        <div class="column" id="player1Area">
+          <label class="playerLabel" for="player1">Player 1:</label>
+          <input class="players" type="text" id="player1" placeholder="Player 1 Name" />
+        </div>
+        <div class="column" id="player2Area">
+          <label class="playerLabel" for="player2">Player 2:</label>
+          <input class="players" type="text" id="player2" placeholder="Player 2 Name" />
+        </div>
+      </div>
+
+      <!-- Score Area -->
+      <div id="scoreArea"></div>
+      <br>
+
+      <!-- Buttons Area -->
+      <button class="button" id="startButton">Start Game</button>
+      <button class="button" id="rollButton">Roll</button>
+      <button class="button" id="endTurnButton">End Turn</button>
+    </div>
+
+    <div class="center"><h3>Dice in the Cup:</h3>
+    <div class="center" id="rollTable"></div>
+    <div class="center" id="tableDiceDisplay"></div>
+    </div>
+
+    <div class="columns" id="disTable">
+      <div class="column"><h3>Current Brains:</h3>
+      <div id="brainTable"></div>
+      </div>
+      <div class="column"><h3>Current Roll:</h3>
+      <div id="handTable"></div>
+      </div>
+      <div class="column"><h3>Current Blasts:</h3>
+      <div id="blastTable"></div>
+      </div>
+    </div>
+    <script src="zombieDice.js"></script>
+  </body>
+</html>
