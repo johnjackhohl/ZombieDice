@@ -28,19 +28,13 @@ The dice have three symbols:
 
 ### Brain
 
-![brain](images/brain.jpg)
-
 You ate your victim's brain. Set your Brain dice to your left.
 
 ### Shotgun
 
-![shotgun](images/shotgun.jpg)
-
 He fought back! Set your Shotgun dice to your right.
 
 ### Footprints
-
-![footprints](images/footprints.jpg)
 
 Your victim escaped. Keep your Feet dice in front of you. If you choose to roll again, you will re-roll these dice, along with enough new ones to bring the total to three.
 
